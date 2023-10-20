@@ -109,7 +109,7 @@ body, html {
     object-fit:cover;
   }
   h2{
-    padding-top: 10vh;
+    padding-top: 8vh;
     margin: 0;
     width: 100%;
     text-align: center;
@@ -123,18 +123,18 @@ body, html {
   }
   .swiper {
     width: 95%;
-    max-width: 1200px;
+    max-width: 1000px;
     background-color: rgba(80, 80, 80, 0.7);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     /* height: 30%; */
   }
   video {
-    width: 80%;
+    width: 90%;
     object-fit: contain;
     margin-bottom: 3rem;
   }
   p{
-    width: 80%;
+    width: 90%;
   }
   .swiper-slide{
     display: flex;
@@ -224,12 +224,16 @@ body, html {
 
 .content{
   width: 90%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 /* Secciones */
 .section {
-  min-height: 100vh;
+  height: 100vh;
+  @media (max-width: 768px) {
+    height: auto;
+    min-height: 100vh;
+  }
   width: 100%;
   transition: transform 0.7s ease;
 }
