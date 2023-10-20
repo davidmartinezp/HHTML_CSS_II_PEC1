@@ -23,6 +23,10 @@
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
+ @import "~swiper/swiper";
+ @import "~swiper/modules/navigation";
+ @import "~swiper/modules/pagination";
+ @import "~swiper/modules/scrollbar";
 
 @import "layouts/home";
 

@@ -15,15 +15,15 @@ const swiper = new Swiper('.swiper', {
         dynamicBullets: true,
     },
   
-  
-    // Navigation arrows
-  //   navigation: {
-  //       nextEl: false,
-  //       prevEl: false,
-  //   },
+
+    // navigation: {
+    //     nextEl: true,
+    //     prevEl: true,
+    // },
   
     // And if we need scrollbar
-  //   scrollbar: {
-  //       el: '.swiper-scrollbar',
-  //   },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+
     });
