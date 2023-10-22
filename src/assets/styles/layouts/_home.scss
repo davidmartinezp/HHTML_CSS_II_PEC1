@@ -176,6 +176,8 @@ body, html {
     text-align: center;
   }
 
+
+
   .competition-info{
     color: #fff;
     position: relative;
@@ -185,6 +187,10 @@ body, html {
 
     &:hover {
       transform: scale(1.1);
+    }
+    &__link {
+      text-decoration: none;
+      color: inherit;
     }
     &__title {
       margin-bottom: 0.1rem;
