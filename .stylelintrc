@@ -1,4 +1,5 @@
 {
+  "extends": "stylelint-config-standard-scss",
   "plugins": [
     "stylelint-selector-bem-pattern"
   ],
@@ -9,7 +10,13 @@
         "initial": "^\\.{componentName}(?:-[a-z]+)?$",
         "combined": "^\\.combined-{componentName}-[a-z]+$"
       },
-      "utilitySelectors": "^\\.util-[a-z]+$"
-    }
+      "utilitySelectors": "^\\.util-[a-z]+$",
+    },
+    "rule-empty-line-before": [
+      "always",
+      {
+        "ignore": ["inside-block","after-comment"]
+      }
+    ]
   }
 }

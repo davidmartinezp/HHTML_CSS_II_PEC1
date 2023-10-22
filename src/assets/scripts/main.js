@@ -1,11 +1,20 @@
- 
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('.section');
     let currentSection = 0;
     let isScrolling = false;
     let startY = 0;
   
-    sections[currentSection].style.transform = 'translateY(0)';
+    // sections.forEach((section, index) => {
+    //   section.style.transform = `translateY(-${100 * index}vh)`;
+    // });
+
+    sections.forEach((section, index) => {
+      section.style.transform = 'translateY(0)';
+    });
+
+    // sections[currentSection].style.transform = 'translateY(0)';
   
     // // Evento para el desplazamiento en dispositivos táctiles
     // window.addEventListener('touchstart', (e) => {
@@ -42,6 +51,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
     }
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+  
+    window.addEventListener('beforeunload', function () {
+      window.scrollTo(0, 0);
+    });
   });
 
   

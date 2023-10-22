@@ -23,10 +23,14 @@
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
- @import "~swiper/swiper";
- @import "~swiper/modules/navigation";
- @import "~swiper/modules/pagination";
- @import "~swiper/modules/scrollbar";
+//  @import "~swiper/swiper";
+
+@import "npm:swiper/swiper";
+@import "npm:swiper/modules/navigation";
+@import "npm:swiper/modules/pagination";
+@import "npm:swiper/modules/scrollbar";
+
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
 
 @import "layouts/home";
 

@@ -9,10 +9,10 @@
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
     "build": "npm-run-all clean stylelint parcel:build",
-    "start": "npm-run-all clean parcel:dev",
+    "start": "npm-run-all clean stylelint parcel:dev",
     "parcel:dev": "parcel src/index.html -p 8123 --target web",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'",
-    "stylelint": "stylelint src/**/*.scss"
+    "stylelint": "stylelint src/assets/styles/**/*.scss"
   },
   "web": "dist/index.html",
   "targets": {
@@ -48,9 +48,11 @@
     "sharp": "0.31.1",
     "stylelint": "^15.10.3",
     "stylelint-config-recommended-scss": "^13.0.0",
+    "stylelint-config-standard-scss": "^11.0.0",
     "stylelint-scss": "^5.2.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2",
     "stylelint-selector-bem-pattern": "^3.0.1",
     "swiper": "^10.3.1"
   }
